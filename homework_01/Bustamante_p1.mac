@@ -1,0 +1,10 @@
+kill(all);
+load(simplex);
+
+U:[X1 + X2>=200,
+X3 + X4>=240,
+X5<=6000,
+X1+X3+X5+X6<=500];
+Z:20*X1-X2*68-X3*80-X4*60-224*X5-250*X6-7000;
+out:maximize_lp(Z,U), nonegative_lp=true;
+print(out);

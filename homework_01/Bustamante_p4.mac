@@ -1,0 +1,25 @@
+kill(all);
+load(simplex);
+
+U:[ Tutor1 + Part1=10,
+Tutor2 + Part2=12,
+Tutor3 + Part3=14,
+Tutor4 + Part4=16,
+Tutor5 + Part5=18,
+Tutor6 + Part6=17,
+Tutor7 + Part7=15,
+Tutor8 + Part8=10,
+Tutor3<=6,
+Tutor4<=6,
+Tutor1<=12,
+Tutor2<=12,
+Tutor5<=12,
+Tutor6<=12,
+Tutor7<=12,
+Tutor8<=12
+];
+
+Z:(Tutor1+Tutor2+Tutor3+Tutor4+Tutor5+Tutor6+Tutor7+Tutor8)*75 + (Part1+Part2+Part3+Part4+Part5+Part6+Part7+Part8)*6;
+
+out:minimize_lp(Z,U), nonegative_lp=true;
+print(out);

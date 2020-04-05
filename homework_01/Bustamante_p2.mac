@@ -1,0 +1,5 @@
+1) The initial value of the tank is an LPP problem or a calculus problem,
+the amount of salt in the tank is a linear problem starting at time=0,
+the equation would be salt=(4*0.5)/60*t - n*ratio of salt and this is <60
+2) The ratio of salt would be different only
+3) 4*60-60n+10=0. so n=4.1666667 gallons leaket out per minute

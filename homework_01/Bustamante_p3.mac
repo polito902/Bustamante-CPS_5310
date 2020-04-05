@@ -1,0 +1,9 @@
+kill(all);
+load(simplex);
+U:[Gas=2*Oil,
+Oil>=3000000,
+Gas<=6400000];
+
+Z= 2.9*Gas + 1.5*Oil;
+out:maximize_lp(Z,U), nonegative_lp=true;
+print(out);
